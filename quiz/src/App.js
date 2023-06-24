@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard'
 
-function App() {
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section className='App'>
+      <TwitterFollowCard 
+        isFollowing={true} 
+        userName="midudev" 
+        name="Miguel Ángel Durán" 
+      />
+      <TwitterFollowCard 
+        isFollowing={false} 
+        userName="pherald" 
+        name="Pablo Hernandez" 
+      />
+      <TwitterFollowCard 
+        isFollowing={false} 
+        userName="rehivax" 
+        name="Kenneth Manzano Lepe" 
+      />
+      <TwitterFollowCard 
+        isFollowing={false} 
+        userName="lemosdg1" 
+        name="Diego Lemos Garcia" 
+      />
+    </section>
+  )
 }
-
-export default App;
