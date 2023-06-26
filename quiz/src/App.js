@@ -7,7 +7,7 @@ export function App() {
     <article>
       <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8X_5ZQeRpoUjSzx7zxD90DlfpOMgtVZZldc2GgIOFMU9wGAbSR8ui&usqp=CAE&s' alt='lugo'/>
       <section>
-        <input type='text'/>
+        <TwitterFollowCard></TwitterFollowCard>
       </section>
     </article>
   )
