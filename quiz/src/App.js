@@ -4,19 +4,11 @@ import { TwitterFollowCard } from './TwitterFollowCard'
 
 export function App() {
   return (
-    <section className='App'>
-      <TwitterFollowCard isFollowing={true} userName="midudev">
-        Miguel Ángel Durán
-      </TwitterFollowCard>
-      <TwitterFollowCard isFollowing={false}>
-        Pablo Hernandez
-      </TwitterFollowCard>
-      <TwitterFollowCard isFollowing={true} userName="rehivax">
-        Kenneth Manzano Lepe
-      </TwitterFollowCard>
-      <TwitterFollowCard isFollowing={false} userName="lemosdg1">
-        Diego Lemos Garcia
-      </TwitterFollowCard>
-    </section>
+    <article>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8X_5ZQeRpoUjSzx7zxD90DlfpOMgtVZZldc2GgIOFMU9wGAbSR8ui&usqp=CAE&s' alt='lugo'/>
+      <section>
+        <input type='text'/>
+      </section>
+    </article>
   )
 }
