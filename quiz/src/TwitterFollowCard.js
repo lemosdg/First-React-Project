@@ -22,6 +22,7 @@ export function TwitterFollowCard() {
   const handleClick = () => {
     if (arreglo < equipo.length - 1) {
       setArreglo(arreglo + 1);
+      setInputValue('');
     }
   };
 
