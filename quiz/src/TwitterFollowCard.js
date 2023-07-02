@@ -8,6 +8,7 @@ export function TwitterFollowCard() {
 
   const [inputValue, setInputValue] = useState('');
   const [showValue, setShowValue] = useState(false);
+  const [arreglo, setArreglo] = useState(0);
 
   const handleChange = (event) => {
     setInputValue(event.target.value);
@@ -15,18 +16,27 @@ export function TwitterFollowCard() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setShowValue(inputValue === equipo[0].nombre); 
+    setShowValue(inputValue === equipo[arreglo].nombre); 
+  };
+
+  const handleClick = () => {
+    if (arreglo < equipo.length - 1) {
+      setArreglo(arreglo + 1);
+    }
   };
 
   return (
     <article>
-      <img src={equipo[0].logo} alt='equipo'/>
+      <img className='logo' src={equipo[arreglo].logo} alt='equipo'/>
       <section>
         <form onSubmit={handleSubmit}>
           <input type="text" value={inputValue} onChange={handleChange} />
         </form>
         {showValue && <p>El valor coincide</p>}
       </section>
+      <button className='next' onClick={handleClick}>
+        <img className='flecha' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flecha_tesela.svg/1200px-Flecha_tesela.svg.png' alt='next' />
+      </button>
     </article>
   )
 }
