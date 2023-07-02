@@ -35,7 +35,7 @@ export function TwitterFollowCard() {
         {showValue && <p>El valor coincide</p>}
       </section>
       <button className='next' onClick={handleClick}>
-        <img className='flecha' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flecha_tesela.svg/1200px-Flecha_tesela.svg.png' alt='next' />
+        <img className='flecha' src='../img/proximo.png' alt='next' />
       </button>
     </article>
   )
